@@ -1,0 +1,39 @@
+name: Epic
+description: A larger initiative that is delivered through several issues
+title: "Epic: "
+labels: ["epic"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: The outcome for users or the business when every part is finished.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why now
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included and what is left out.
+    validations:
+      required: true
+  - type: textarea
+    id: issues
+    attributes:
+      label: Issues in this epic
+      description: A task list of the issues that deliver it. Add to it as they are created.
+      value: |
+        - [ ] 
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: How we know the whole initiative is complete.
+    validations:
+      required: true

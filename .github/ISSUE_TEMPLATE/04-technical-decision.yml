@@ -1,0 +1,78 @@
+name: Technical decision
+description: An architectural or technical choice the team has to make and record
+title: "Decision: "
+labels: ["decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A decision issue records why a choice was made. Building what was decided belongs in separate issues, linked under Implementation.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: The problem, and why a decision is needed now.
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What we are trying to achieve.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: Each option with its main trade-offs.
+      value: |
+        - **Option A:** 
+        - **Option B:** 
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Evaluation criteria
+      description: What the options are judged on.
+    validations:
+      required: true
+  - type: textarea
+    id: research
+    attributes:
+      label: Research and evidence
+      description: What will be tested or read. Add links, measurements and findings here as they come in.
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: Which option is recommended and why. Write "None yet" until the research is done.
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: The final decision, the date and the decision owner. Write "Open" and name the owner until it is made.
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What changes as a result, and which trade-offs we accept.
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation
+      description: Links to the follow-up issues that carry out the decision.
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      value: |
+        - [ ] Recommendation written, with evidence
+        - [ ] Reviewed by the people it affects
+        - [ ] Decision recorded with date and owner
+        - [ ] Implementation issues created and linked
+    validations:
+      required: true

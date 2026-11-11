@@ -1,0 +1,32 @@
+name: Engineering task
+description: Engineering work with a clear outcome, such as setup, configuration or refactoring
+title: "Task: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs to be done
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What it unblocks, or what goes wrong if it is not done.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: Each item must be something a reviewer can verify.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Depends on, or blocks
+      description: Link the related issues.
