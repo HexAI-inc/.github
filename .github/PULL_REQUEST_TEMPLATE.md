@@ -14,4 +14,5 @@ Closes #
 - [ ] New behaviour has a test
 - [ ] Docs and `.env.example` are updated if this change affects them
 - [ ] No secrets in the diff
+- [ ] Screenshots attached and UX sign-off requested from the CTO, if this changes what a user sees
 - [ ] The card is in "In Review" on the project board
